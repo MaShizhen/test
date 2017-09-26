@@ -56,3 +56,13 @@ export function add7(a: number, b: number) {
 // 	const e = new Add();
 // 	return e.add(a, b);
 // }
+
+export function add9(a: () => number, b: () => number) {
+	return a() + b();
+}
+
+export async function add10(a: () => Promise<number>, b: () => Promise<number>) {
+	const aa = await a();
+	const bb = await b();
+	return aa + bb;
+}
