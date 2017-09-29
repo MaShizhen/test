@@ -66,3 +66,5 @@ export async function add10(a: () => Promise<number>, b: () => Promise<number>) 
 	const bb = await b();
 	return aa + bb;
 }
+
+
